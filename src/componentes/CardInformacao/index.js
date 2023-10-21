@@ -1,6 +1,6 @@
 import "./style.css";
 
-export default function CardInformacao ({tipoAnimal}) {
+export default function CardInformacao ({tipoAnimal}) { /* Enviando o state atual para o componente via props*/
     let nomeAnimalCachorro = "cachorro";
     let nomeAnimalGato = "gato";
     let informacaoCachorro = "É um mamífero carnívoro da família dos canídeos.";
@@ -13,3 +13,5 @@ export default function CardInformacao ({tipoAnimal}) {
         </div>
     );
 }
+
+/* Com o valor atual do state será feito um IF ternário para atualizar o componente */

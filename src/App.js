@@ -26,9 +26,15 @@ export default function App () {
         <button onClick={alterarState}>Mudar Animal</button>
       </header>    
 
-      <CardAnimal tipoAnimal = {tipoDoComponenteCard}/>
+      <CardAnimal tipoAnimal = {tipoDoComponenteCard}/> 
 
       <CardInformacao tipoAnimal = {tipoDoComponenteCard} />
     </div>
   );
 }
+
+/* 
+* <CardAnimal tipoAnimal = {tipoDoComponenteCard}/> //Enviando state para os componentes via props
+* Ao fazer isso, as variáveis e a estrutura condicional pode ser retirada, e usadas diretamente nos componentes.
+
+*/
