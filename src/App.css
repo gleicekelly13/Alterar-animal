@@ -40,25 +40,3 @@ button {
   cursor: pointer;
 }
 
-
-
-.CardInformacao {
-  width: 300px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid #000;
-  border-radius: 8px;
-  color: #000;
-  font-weight: 600;
-}
-
-.CardInformacao h3 {
-  margin-bottom: 15px;
-}
-
-.CardInformacao p {
-  width: 80%;
-}
