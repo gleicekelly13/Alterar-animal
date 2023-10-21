@@ -12,3 +12,10 @@
   text-align: center;
   background-color: rgb(150, 213, 250);
 }
+
+header {
+  width: 100%;
+  padding: 20px 0px;
+  border-bottom: 1px solid gray;
+  color: #000;
+}
