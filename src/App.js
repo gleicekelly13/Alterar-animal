@@ -1,7 +1,5 @@
 import "./App.css";
 import { useState } from "react";
-import imagemCachorro from "./assets/cachorro.jpg";
-import imagemGato from "./assets/gato.jpg";
 import CardAnimal from "./componentes/CardAnimal";
 import CardInformacao from "./componentes/CardInformacao";
 
@@ -20,16 +18,6 @@ export default function App () {
     }
   };
 
-  if(tipoDoComponenteCard === "cachorro") {
-    imagemAnimal = imagemCachorro;
-    informacaoAnimal = "É um mamífero carnívoro da família dos canídeos.";
-    tipoAnimal = "Cachorro";
-  } else {
-    imagemAnimal = imagemGato;
-    informacaoAnimal = "É um mamífero carnívoro da família dos felídeos.";
-    tipoAnimal = "Gato";
-  }
-
   return (
     <div className="App">
       <header>
@@ -38,9 +26,9 @@ export default function App () {
         <button onClick={alterarState}>Mudar Animal</button>
       </header>    
 
-      <CardAnimal imagemAnimal={imagemAnimal}/>
+      <CardAnimal tipoAnimal = {tipoDoComponenteCard}/>
 
-      <CardInformacao tipoAnimal = {tipoAnimal} informacaoAnimal = {informacaoAnimal} />
+      <CardInformacao tipoAnimal = {tipoDoComponenteCard} />
     </div>
   );
 }
