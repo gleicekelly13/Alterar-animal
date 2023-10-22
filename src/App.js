@@ -7,9 +7,14 @@ import CardInformacao from "./componentes/CardInformacao";
 export default function App () {
   const [tipoDoComponenteCard, setTipoDoComponenteCard] = useState("cachorro");
 
+  const alterarState = () => {
+    tipoDoComponenteCard === "cachorro" ? setTipoDoComponenteCard("gato") : setTipoDoComponenteCard("cachorro");
+  };
+
+
   return (
     <div className="App">
-      <Topo tipoAnimal={tipoDoComponenteCard} setState={setTipoDoComponenteCard}/>
+      <Topo clickAlterarAnimal={alterarState}/>
 
       <CardAnimal tipoAnimal = {tipoDoComponenteCard}/> 
 

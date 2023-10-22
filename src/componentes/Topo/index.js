@@ -1,15 +1,11 @@
 import './style.css';
 
-export default function Topo ({tipoAnimal, setState}) {
-    const alterarState = () => {
-        tipoAnimal === "cachorro" ? setState("gato") : setState("cachorro");
-    };
-
+export default function Topo ({clickAlterarAnimal}) {
     return (
         <header>
             <h1>Projeto Props + useState</h1>
             <p>Clique no botão para mudar os componentes abaixo</p>
-            <button onClick={alterarState}>Mudar Animal</button>
+            <button onClick={clickAlterarAnimal}>Mudar Animal</button>
         </header>    
     );
 }
